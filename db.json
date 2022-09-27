@@ -1,0 +1,27 @@
+{
+    "cows": [
+        {
+            "id": 1,
+            "username": "yellowPetal",
+            "picture": "https://www.boredpanda.com/blog/wp-content/uploads/2017/10/59d490df85312_lpj7hm6t9zly__700.jpg",
+            "caption": "Baby hairy cow sticking it's tongue out!",
+            "comment1": "Oh my goodness, my heart!"
+        },
+        {
+            "id": 2,
+            "username": "mooMoo_26",
+            "picture": "https://nypost.com/wp-content/uploads/sites/2/2022/04/farm-highland-cow-03.jpg?quality=75&strip=all",
+            "caption": "I just work here...",
+            "comment1": "Excuse me, can I talk to your manager?",
+            "comment2": "Ma'am, I'm gonna have to ask you to leave..."
+        },
+        {
+            "id": 3,
+            "username": "cowLover2000",
+            "picture": "https://img.buzzfeed.com/buzzfeed-static/static/2017-10/19/14/asset/buzzfeed-prod-fastlane-03/sub-buzz-2288-1508439279-2.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto",
+            "caption": "Whatever they said, I didn't do it!",
+            "comment1": "Ole boy looks like he had a rough night",
+            "comment2": "He look's like he just got caught redhanded eating all the treats!"
+        }
+    ]
+}
