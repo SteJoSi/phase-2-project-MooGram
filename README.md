@@ -8,9 +8,11 @@ MooGram was inspired by Instagram. I essectially wanted to create a platform jus
 2. In your terminal, 'cd' into the project
 3. In your terminal,
 
-    i. Run 'npm install'
-    ii. Run the json-server with: 'npm run server'
-    iii. Run the React server with: 'npm start'
+        i. Run 'npm install'
+
+        ii. Run the json-server with: 'npm run server'
+        
+        iii. Run the React server with: 'npm start'
 
 ## Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
