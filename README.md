@@ -7,6 +7,7 @@ MooGram was inspired by Instagram. I essectially wanted to create a platform jus
 1. Fork and Clone the repository using the SSH key
 2. In your terminal, 'cd' into the project
 3. In your terminal,
+
     i. Run 'npm install'
     ii. Run the json-server with: 'npm run server'
     iii. Run the React server with: 'npm start'
