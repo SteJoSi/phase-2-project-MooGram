@@ -1,6 +1,17 @@
 import React from "react";
 // import ReactDOM  from "react";
-import { Route } from "react-router-dom";
+import { NavLink, Route, Switch } from "react-router-dom";
+
+function NavBar() {
+  return (
+    <div>
+      <NavLink exact to="/">Home</NavLink>
+      <NavLink exact to="/explore">Explore</NavLink>
+      <NavLink exact to="/create">Create</NavLink>
+    </div>
+
+  )
+}
 
 //this will display collage pictures of MooMoo's and navbar 
 function Home() {
@@ -31,18 +42,21 @@ function Create() {
 
 function App() {
   return (
-    <div >
-      <Route path="/">
-        <Home />
-      </Route>
+    <div>
+      <NavBar />
+      <Switch>
+        <Route path="/explore">
+          <Explore />
+        </Route>
 
-      <Route path="/explore">
-        <Explore />
-      </Route>
+        <Route path="/create">
+          <Create />
+        </Route>
 
-      <Route path="/create">
-        <Create />
-      </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
     </div>
   );
 }
