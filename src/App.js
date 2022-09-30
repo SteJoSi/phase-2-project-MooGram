@@ -2,12 +2,22 @@ import React from "react";
 // import ReactDOM  from "react";
 import { NavLink, Route, Switch } from "react-router-dom";
 
+//styling for NavBar
+const navStyles = {
+  display: "inline-block",
+  width: "50px",
+  padding: "12px",
+  margin: "0 6px 6px",
+  textDecoration: "none",
+  color: "black",
+}
+
 function NavBar() {
   return (
     <div>
-      <NavLink exact to="/">Home</NavLink>
-      <NavLink exact to="/explore">Explore</NavLink>
-      <NavLink exact to="/create">Create</NavLink>
+      <NavLink exact to="/" style={navStyles}>Home</NavLink>
+      <NavLink exact to="/explore" style={navStyles}>Explore</NavLink>
+      <NavLink exact to="/create" style={navStyles}>Create</NavLink>
     </div>
 
   )
