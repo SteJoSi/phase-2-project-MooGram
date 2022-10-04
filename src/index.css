@@ -12,3 +12,19 @@
     monospace;
 } */
 
+#title {
+  font-family: 'Lobster Two', cursive;
+  font-size: 150px;
+  margin: 300px, 100px, 100px, 100px;
+  padding: 100px, 200px, 100px, 200px;
+  text-align: center;
+}
+
+nav {
+  /* background-color: black; */
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  transition: top 0.3s;
+} 

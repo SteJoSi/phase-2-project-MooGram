@@ -6,19 +6,19 @@ import { NavLink, Route, Switch } from "react-router-dom";
 const navStyles = {
   display: "inline-block",
   width: "50px",
-  padding: "12px",
-  margin: "0 6px 6px",
+  padding: "12px 20px",
+  margin: "0px 10px 0px 10px",
   textDecoration: "none",
   color: "black",
 }
 
 function NavBar() {
   return (
-    <div>
+    <nav>
       <NavLink exact to="/" style={navStyles}>Home</NavLink>
       <NavLink exact to="/explore" style={navStyles}>Explore</NavLink>
       <NavLink exact to="/create" style={navStyles}>Create</NavLink>
-    </div>
+    </nav>
 
   )
 }
@@ -26,7 +26,7 @@ function NavBar() {
 //this will display collage pictures of MooMoo's and navbar 
 function Home() {
   return (
-    <div>
+    <div id="title">
       <header>MooGram!</header>
     </div>
   );
@@ -45,7 +45,21 @@ function Explore() {
 function Create() {
   return (
     <div>
-      <h1>Uploade here!</h1>
+      <h1>Upload here!</h1>
+      <form>
+        <div>
+          <input type="text" name="username" placeholder="Username" />
+        </div>
+        <div>
+          <input type="url" name="image" placeholder="Image" />
+        </div>
+        <div>
+          <input type="caption" name="caption" placeholder="Caption" />
+        </div>
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
     </div>
   )
 }
@@ -54,6 +68,7 @@ function App() {
   return (
     <div>
       <NavBar />
+      <div>
       <Switch>
         <Route path="/explore">
           <Explore />
@@ -67,6 +82,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
+      </div>
     </div>
   );
 }
