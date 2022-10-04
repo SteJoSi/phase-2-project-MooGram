@@ -62,6 +62,14 @@ function Create() {
           <input type="text" name="caption" />
         </div>
         <div>
+          <p>Location</p>
+          <input type="text" name="location" />
+        </div>
+        <div>
+          <p>Date</p>
+          <input type="text" name="date" />
+        </div>
+        <div>
           <input type="submit" value="Submit" />
         </div>
       </form>
