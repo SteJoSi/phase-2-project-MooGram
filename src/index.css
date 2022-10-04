@@ -27,4 +27,14 @@ nav {
   text-align: center;
   top: 0;
   transition: top 0.3s;
+  font-family: 'Oswald', sans-serif;;
 } 
+
+#create {
+  text-align: center;
+  padding: 100px;
+}
+
+input {
+  width: 50%;
+}

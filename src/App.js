@@ -45,16 +45,21 @@ function Explore() {
 function Create() {
   return (
     <div>
-      <h1>Upload here!</h1>
-      <form>
+      <div>
+        <h1 id="formTitle">Upload here!</h1>
+      </div>
+      <form id="create">
         <div>
-          <input type="text" name="username" placeholder="Username" />
+          <p>Username</p>
+          <input type="text" name="username" />
         </div>
         <div>
-          <input type="url" name="image" placeholder="Image" />
+          <p>Image</p>
+          <input type="url" name="image" />
         </div>
         <div>
-          <input type="caption" name="caption" placeholder="Caption" />
+          <p>Caption</p>
+          <input type="text" name="caption" />
         </div>
         <div>
           <input type="submit" value="Submit" />
