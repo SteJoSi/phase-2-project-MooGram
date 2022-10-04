@@ -54,6 +54,13 @@ input[type=url] {
   border: 2px solid saddlebrown;
 }
 
+input[type=caption] {
+  border-radius: 4px;
+  border: 2px solid saddlebrown;
+  width: 75%;
+  height: 150px;
+}
+
 #formTitle {
   text-align: center;
   padding: 50px, 0px, 0px;
