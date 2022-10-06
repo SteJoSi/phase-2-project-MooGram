@@ -9,16 +9,16 @@ const navStyles = {
     margin: "0px 10px 0px 10px",
     textDecoration: "none",
     color: "black",
-  }
-  
-  function NavBar() {
-    return (
-      <nav>
-        <NavLink exact to="/" style={navStyles}>Home</NavLink>
-        <NavLink exact to="/explore" style={navStyles}>Explore</NavLink>
-        <NavLink exact to="/create" style={navStyles}>Create</NavLink>
-      </nav>
-    )
-  }
+}
 
-  export default NavBar;
+function NavBar() {
+    return (
+        <nav>
+            <NavLink exact to="/" style={navStyles}>Home</NavLink>
+            <NavLink exact to="/explore" style={navStyles}>Explore</NavLink>
+            <NavLink exact to="/create" style={navStyles}>Create</NavLink>
+        </nav>
+    )
+}
+
+export default NavBar;

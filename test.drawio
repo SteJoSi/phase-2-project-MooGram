@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="w9QubMDbxZy7kOJR6wyI" name="Page-1">
-        <mxGraphModel dx="3083" dy="328" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="3365" dy="251" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -30,6 +30,11 @@
                         <mxPoint x="-1620" y="180" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
+                <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;shape=link;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1240" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="6" value="Explore" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="-1560" y="240" width="120" height="20" as="geometry"/>
                 </mxCell>
@@ -57,8 +62,8 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="22" value="preview of post, when clicked it takes user to a different route&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="-1300" y="60" width="340" height="20" as="geometry"/>
+                <mxCell id="22" value="picture of 1 cow scrolling to more cows" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="-1240" y="60" width="220" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;shape=link;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="24">
                     <mxGeometry relative="1" as="geometry">
@@ -67,6 +72,9 @@
                 </mxCell>
                 <mxCell id="24" value="Footer" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="-1460" y="170" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="a bunch of cow pictures&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="-1230" y="240" width="140" height="20" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
