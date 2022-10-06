@@ -1,10 +1,22 @@
 import React from "react";
-// import ReactDOM  from "react";
 import { Route, Switch } from "react-router-dom";
+// import ReactDOM  from "react";
+
 import Create from "./Create";
 import NavBar from "./NavBar";
 import Home from "./Home";
 import Explore from "./Explore";
+
+function Footer() {
+  return (
+    <div id="footer">  
+    <footer>
+      <p>MooGram, LLC</p>
+      <a href="#">support@moogram.com</a>
+    </footer>
+    </div>
+  )
+}
 
 function App() {
   return (
@@ -26,6 +38,7 @@ function App() {
 
         </Switch>
       </div>
+      <Footer />
     </div>
   );
 }
