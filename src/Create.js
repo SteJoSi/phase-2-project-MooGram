@@ -3,6 +3,11 @@ import React, { useState } from "react";
 //(create) form with photo upload, caption, date
 function Create() {
     const [username, setUsername] = useState("")
+    const [image, setImage] = useState("")
+    const [location, setLocation] = useState("")
+    const [date, setDate] = useState("")
+    const [caption, setCaption] = useState("")
+
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -26,19 +31,39 @@ function Create() {
                 </div>
                 <div>
                     <p>Image</p>
-                    <input type="url" name="image" />
+                    <input 
+                        type="url" 
+                        name="image" 
+                        value={image}
+                        onChange={(e) => setImage(e.target.value)}
+                    />
                 </div>
                 <div>
                     <p>Location</p>
-                    <input type="text" name="location" />
+                    <input 
+                        type="text" 
+                        name="location" 
+                        value={location}
+                        onChange={(e) => setLocation(e.target.value)}
+                    />
                 </div>
                 <div>
                     <p>Date</p>
-                    <input type="text" name="date" />
+                    <input 
+                        type="text" 
+                        name="date" 
+                        value={date}
+                        onChange={(e) => setDate(e.target.value)}
+                    />
                 </div>
                 <div>
                     <p>Caption</p>
-                    <input type="caption" name="caption" />
+                    <input 
+                        type="caption" 
+                        name="caption" 
+                        value={caption}
+                        onChange={(e) => setCaption(e.target.value)}
+                    />
                 </div>
                 <div>
                     <input type="submit" value="Submit" />
