@@ -11,7 +11,14 @@ function Create() {
 
     function handleSubmit(e) {
         e.preventDefault()
-        console.log(e.target.username.value)
+        const formData = {
+            username,
+            image,
+            location,
+            date,
+            caption
+        }
+        console.log('form', formData)
     }
 
     return (
