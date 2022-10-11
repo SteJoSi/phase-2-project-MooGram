@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 //(create) form with photo upload, caption, date
 function Create() {
+    const [username, setUsername] = useState("")
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        console.log(e.target.username.value)
+    }
+
     return (
         <div>
             <div>
                 <h1 id="formTitle">Upload here!</h1>
             </div>
-            <form id="create">
+            <form id="create" onSubmit={handleSubmit}>
                 <div>
                     <p>Username</p>
-                    <input type="text" name="username" />
+                    <input 
+                        type="text" 
+                        name="username" 
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                    />
                 </div>
                 <div>
                     <p>Image</p>

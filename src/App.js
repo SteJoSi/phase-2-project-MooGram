@@ -7,16 +7,16 @@ import NavBar from "./NavBar";
 import Home from "./Home";
 import Explore from "./Explore";
 
-function Footer() {
-  return (
-    <div id="footer">  
-    <footer>
-      <p>MooGram, LLC</p>
-      <a href="#">support@moogram.com</a>
-    </footer>
-    </div>
-  )
-}
+// function Footer() {
+//   return (
+//     <div id="footer">  
+//     <footer>
+//       <p>MooGram, LLC</p>
+//       <a href="#">support@moogram.com</a>
+//     </footer>
+//     </div>
+//   )
+// }
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
 
         </Switch>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

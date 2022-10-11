@@ -6,6 +6,7 @@ function Home() {
         <div id="title">
             <header>MooGram!</header>
         </div>
+        
     );
 }
 
