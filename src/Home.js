@@ -16,19 +16,20 @@ function Home() {
     return (
         <div>
             <header id="title">MooGram!</header>
-                {cow.map((cows) => (
-                    <div key={cows.id}>
-                        <h3>{cows.username}</h3>
-                        <p>{cows.location}</p>
-                        <img src={cows.picture} alt="cow" />
-                        <p>{cows.date}</p>
-                        <p>{cows.caption}</p>
-                        <h3>Comments:</h3>
-                        <p>{cows.comment1}</p>
-                        <p>{cows.comments2}</p>
-                    </div>
-                )
-                )}
+            {cow.map((cows) => (
+                <div id="cowContainer" key={cows.id}>
+                    <h3>{cows.username}</h3>
+                    <p>{cows.location}</p>
+                    <img src={cows.picture} alt="cow" id="mooPic" />
+                    
+                    <p>{cows.username} {cows.caption}</p>
+                    <p>{cows.date}</p>
+                    <h3>Comments:</h3>
+                    <p>{cows.comment1}</p>
+                    <p>{cows.comments2}</p>
+                </div>
+            )
+            )}
         </div>
 
     );
