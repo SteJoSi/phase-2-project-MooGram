@@ -9,6 +9,8 @@ function Create() {
     const [caption, setCaption] = useState("")
 
 
+    //POST request here to add a new image  to Home
+    
     function handleSubmit(e) {
         e.preventDefault()
         const formData = {

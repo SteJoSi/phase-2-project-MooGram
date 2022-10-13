@@ -1,7 +1,9 @@
 import React from "react";
 
-//(explore)this will be display the picture the user clicked on with caption, date, info
+//(explore)this will be display the picture the user clicked on with date and location
 function Explore() {
+    //add a hover effect to display date and location
+
     return (
         <div>
             <h1 id="exploreTitle">Cows!</h1>
