@@ -18,15 +18,14 @@ function Home() {
             <header id="title">MooGram!</header>
             {cow.map((cows) => (
                 <div id="cowContainer" key={cows.id}>
-                    <h3>{cows.username}</h3>
+                    <h3><ion-icon name="person"></ion-icon> {cows.username}</h3>
                     <p>{cows.location}</p>
                     <img src={cows.picture} alt="cow" id="mooPic" />
-                    
-                    <p>{cows.username} {cows.caption}</p>
+                    <div>
+                        <ion-icon name="heart-outline"></ion-icon> <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                    </div>
+                    <div id="caption">{cows.username}</div><div>{cows.caption}</div>
                     <p>{cows.date}</p>
-                    <h3>Comments:</h3>
-                    <p>{cows.comment1}</p>
-                    <p>{cows.comments2}</p>
                 </div>
             )
             )}

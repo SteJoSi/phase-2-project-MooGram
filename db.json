@@ -5,8 +5,8 @@
             "username": "yellowPetal",
             "picture": "https://www.boredpanda.com/blog/wp-content/uploads/2017/10/59d490df85312_lpj7hm6t9zly__700.jpg",
             "location": "Seattle, Washington",
-            "date": "July 22, 2022",
-            "caption": "Baby hairy cow sticking it's tongue out!"
+            "caption": "Mom, stop taking pictures of me!",
+            "date": "July 22, 2022"
         },
         {
             "id": 2,
@@ -14,18 +14,15 @@
             "picture": "https://nypost.com/wp-content/uploads/sites/2/2022/04/farm-highland-cow-03.jpg?quality=75&strip=all",
             "location": "Boise, Idaho",
             "date": "March 5, 2022",
-            "caption": "I just work here...",
-            "comment1": "Excuse me, can I talk to your manager?"
+            "caption": "Can I go home now ..."
         },
         {
             "id": 3,
             "username": "cowLover2000",
-            "picture": "https://img.buzzfeed.com/buzzfeed-static/static/2017-10/19/14/asset/buzzfeed-prod-fastlane-03/sub-buzz-2288-1508439279-2.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto",
+            "picture": "https://www.mypetsname.com/wp-content/uploads/2019/08/Funny-Cow-Face.jpg",
             "location": "El Paso, Texas",
             "date": "August 13, 2022",
-            "caption": "Whatever they said, I didn't do it!",
-            "comment1": "Ole boy looks like he had a rough night",
-            "comment2": "He looks like he just got caught redhanded eating all the treats!"
+            "caption": "Got Milk? Because I do"
         }
     ]
 }

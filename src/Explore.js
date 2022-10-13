@@ -4,7 +4,7 @@ import React from "react";
 function Explore() {
     return (
         <div>
-            <h1>Explore Cows Here!</h1>
+            <h1 id="exploreTitle">Cows!</h1>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvmfjg9mxTPOypfxtNaxXSQGHPWkodhvXv_g&usqp=CAU" alt="cow" id="explorePics"/>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLpVlI8xlGlwarmMx455mlfRHGIah4DKhB1g&usqp=CAU" alt="cow" id="explorePics"/>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmehSYxzdO4LtyyDXRFX688O2wJX8OA7-_4g&usqp=CAU" alt="cow" id="explorePics"/>

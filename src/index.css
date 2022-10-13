@@ -96,27 +96,37 @@ input[type=caption] {
 }
 
 #cowContainer {
-  padding: 10px 20px 0px;
+  padding: 10px 10px 0px;
   width: 700px;
-  height: 600px;
+  height: 800px;
   display: inline-grid;
-  margin: 30px 300px;
+  margin: 30px 300px 30px 330px;
   background-color: white;
   box-shadow: 3px 4px gray;
-  border: black solid 2px;
+  border: black solid 10px;
   border-radius: 8px;
+  box-align: center;
 }
 
 #mooPic {
   justify-self: center;
-  height: 300px;
-  width: auto;
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* #commentForm {
   border-radius: 10px;
   border: 2px solid gray;
 } */
+
+#exploreTitle {
+  font-family: 'Lobster Two', cursive;
+  font-size: 150px;
+  margin: 300px, 100px, 100px, 100px;
+  padding: 100px, 200px, 100px, 200px;
+  text-align: center;
+}
 
 #explorePics {
   padding: 5px;
@@ -133,3 +143,17 @@ input[type=caption] {
   width: auto;
 }
 
+ion-icon {
+  font-size: 25px;
+}
+
+
+#caption {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+}
