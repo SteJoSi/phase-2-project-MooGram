@@ -76,7 +76,7 @@ input[type=caption] {
   height: 150px;
 }
 
-#formTitle {
+.formTitle {
   text-align: center;
   padding: 50px, 0px, 0px;
   margin: 50px, 0px, 10px;
@@ -94,8 +94,9 @@ input[type=caption] {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
 }
-
-#cowContainer {
+/* margin-auto based on parent element
+flex box */
+.cowContainer {
   padding: 10px 10px 0px;
   width: 700px;
   height: 800px;
@@ -108,7 +109,7 @@ input[type=caption] {
   box-align: center;
 }
 
-#mooPic {
+.mooPic {
   justify-self: center;
   height: 500px;
   width: 100%;
@@ -120,7 +121,7 @@ input[type=caption] {
   border: 2px solid gray;
 } */
 
-#exploreTitle {
+.exploreTitle {
   font-family: 'Lobster Two', cursive;
   font-size: 150px;
   margin: 300px, 100px, 100px, 100px;
@@ -128,7 +129,7 @@ input[type=caption] {
   text-align: center;
 }
 
-#explorePics {
+.explorePics {
   padding: 5px;
   width: 240px;
   height: 500px;
@@ -148,7 +149,7 @@ ion-icon {
 }
 
 
-#caption {
+.caption {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
 }
@@ -156,4 +157,13 @@ ion-icon {
 h3{
   font-family: 'Oswald', sans-serif;
   font-size: 25px;
+}
+
+button {
+  background-color: white;
+  border: white;
+}
+
+.username {
+  margin-bottom: -25px;
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 //(create) form with photo upload, caption, date
 function Create() {
@@ -8,9 +9,12 @@ function Create() {
     const [date, setDate] = useState("")
     const [caption, setCaption] = useState("")
 
+    const history = useHistory()
+
 
     //POST request here to add a new image  to Home
-    
+    //programmatic navigation lab
+
     function handleSubmit(e) {
         e.preventDefault()
         const formData = {
@@ -20,13 +24,16 @@ function Create() {
             date,
             caption
         }
+        //fetch POST
         console.log('form', formData)
+        //.then(#2)
+        history.push("/");
     }
 
     return (
         <div>
             <div>
-                <h1 id="formTitle">Upload here!</h1>
+                <h1 className="formTitle">Upload here!</h1>
             </div>
             <form id="create" onSubmit={handleSubmit}>
                 <div>
