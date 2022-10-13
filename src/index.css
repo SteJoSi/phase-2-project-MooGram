@@ -117,3 +117,19 @@ input[type=caption] {
   border-radius: 10px;
   border: 2px solid gray;
 } */
+
+#explorePics {
+  padding: 5px;
+  width: 240px;
+  height: 500px;
+  display: inline-grid;
+  margin: 16px 32px;
+  background-color: black;
+  box-shadow: 3px 4px gray;
+  /* border: saddlebrown solid 2px; */
+  border-radius: 8px;
+  justify-self: center;
+  height: 192px;
+  width: auto;
+}
+
