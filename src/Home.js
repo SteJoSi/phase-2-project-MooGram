@@ -28,6 +28,10 @@ function Home() {
         setHeart((heartOn) => !heartOn)
     }
 
+    // function handleNewPost(newPost) {
+    //     console.log("New Post:", newPost)
+    // }
+
     //make a separate component line 34 down
     //change id to className 
 

@@ -4,10 +4,12 @@ import { useHistory } from "react-router-dom";
 //(create) form with photo upload, caption, date
 function Create() {
     const [username, setUsername] = useState("")
-    const [image, setImage] = useState("")
+    const [imageUrl, setImage] = useState("")
     const [location, setLocation] = useState("")
     const [date, setDate] = useState("")
     const [caption, setCaption] = useState("")
+
+    // const[newPost, setNewPost] = useState("")
 
     // const [formData, setFormData] = useState({
     //     username: "",
@@ -34,13 +36,13 @@ function Create() {
         e.preventDefault()
         const formData = {
             username: username,
-            image: image,
+            image: imageUrl,
             location: location,
             date: date,
             caption: caption
         }
         //fetch POST
-        fetch("http://localhost:3001/create", {
+        fetch("http://localhost:3001/cows", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -50,11 +52,14 @@ function Create() {
             .then((r) => r.json())
             .then((newPost) => {
                 console.log('post', newPost)
+                // setNewPost(newPost)
+                
                 history.push("/");
 
             })
         console.log('form', formData)
     }
+
 
     return (
         <div>
@@ -69,7 +74,6 @@ function Create() {
                         name="username"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
-                        // onChange={handleChange}
                     />
                 </div>
                 <div>
@@ -77,9 +81,8 @@ function Create() {
                     <input
                         type="url"
                         name="image"
-                        value={image}
+                        value={imageUrl}
                         onChange={(e) => setImage(e.target.value)}
-                        // onChange={handleChange}
                     />
                 </div>
                 <div>
@@ -89,7 +92,6 @@ function Create() {
                         name="location"
                         value={location}
                         onChange={(e) => setLocation(e.target.value)}
-                        // onChange={handleChange}
                     />
                 </div>
                 <div>
@@ -99,7 +101,6 @@ function Create() {
                         name="date"
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
-                        // onChange={handleChange}
                     />
                 </div>
                 <div>
@@ -109,7 +110,6 @@ function Create() {
                         name="caption"
                         value={caption}
                         onChange={(e) => setCaption(e.target.value)}
-                        // onChange={handleChange}
                     />
                 </div>
                 <div>

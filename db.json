@@ -1,28 +1,43 @@
 {
-    "cows": [
-        {
-            "id": 1,
-            "username": "yellowPetal",
-            "picture": "https://www.boredpanda.com/blog/wp-content/uploads/2017/10/59d490df85312_lpj7hm6t9zly__700.jpg",
-            "location": "Seattle, Washington",
-            "caption": "Mom, stop taking pictures of me!",
-            "date": "July 22, 2022"
-        },
-        {
-            "id": 2,
-            "username": "mooMoo_26",
-            "picture": "https://nypost.com/wp-content/uploads/sites/2/2022/04/farm-highland-cow-03.jpg?quality=75&strip=all",
-            "location": "Boise, Idaho",
-            "date": "March 5, 2022",
-            "caption": "Can I go home now ..."
-        },
-        {
-            "id": 3,
-            "username": "cowLover2000",
-            "picture": "https://www.mypetsname.com/wp-content/uploads/2019/08/Funny-Cow-Face.jpg",
-            "location": "El Paso, Texas",
-            "date": "August 13, 2022",
-            "caption": "Got Milk? Because I do"
-        }
-    ]
+  "cows": [
+    {
+      "id": 1,
+      "username": "yellowPetal",
+      "picture": "https://www.boredpanda.com/blog/wp-content/uploads/2017/10/59d490df85312_lpj7hm6t9zly__700.jpg",
+      "location": "Seattle, Washington",
+      "caption": "Mom, stop taking pictures of me!",
+      "date": "July 22, 2022"
+    },
+    {
+      "id": 2,
+      "username": "mooMoo_26",
+      "picture": "https://nypost.com/wp-content/uploads/sites/2/2022/04/farm-highland-cow-03.jpg?quality=75&strip=all",
+      "location": "Boise, Idaho",
+      "date": "March 5, 2022",
+      "caption": "Can I go home now ..."
+    },
+    {
+      "id": 3,
+      "username": "cowLover2000",
+      "picture": "https://www.mypetsname.com/wp-content/uploads/2019/08/Funny-Cow-Face.jpg",
+      "location": "El Paso, Texas",
+      "date": "August 13, 2022",
+      "caption": "Got Milk? Because I do"
+    },
+    {
+      "username": "mooMoo12",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvmfjg9mxTPOypfxtNaxXSQGHPWkodhvXv_g&usqp=CAU",
+      "location": "Seattle, WA",
+      "date": "12/27/2022",
+      "caption": "Test Caption",
+      "id": 4
+    },
+    {
+      "username": "mooMoo12",
+      "location": "Seattle, WA",
+      "date": "12/27/2022",
+      "caption": "Submit",
+      "id": 5
+    }
+  ]
 }
