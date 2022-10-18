@@ -9,34 +9,13 @@ function Create() {
     const [date, setDate] = useState("")
     const [caption, setCaption] = useState("")
 
-    // const[newPost, setNewPost] = useState("")
-
-    // const [formData, setFormData] = useState({
-    //     username: "",
-    //     image: "",
-    //     location: "",
-    //     date: "",
-    //     caption: ""
-    // })
-
     const history = useHistory()
-
-
-    //POST request here to add a new image  to Home
-    //programmatic navigation lab
-
-    // function handleChange(e) {
-    //     setFormData({
-    //         ...formData,
-    //         [e.target.name]: e.target.value,
-    //     });
-    // }
 
     function handleSubmit(e) {
         e.preventDefault()
         const formData = {
             username: username,
-            image: imageUrl,
+            picture: imageUrl,
             location: location,
             date: date,
             caption: caption
