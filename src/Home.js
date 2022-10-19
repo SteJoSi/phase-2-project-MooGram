@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-// import postContainer from "./postContainer";
+import React, {useState, useEffect} from "react";
+import PostContainer from "./PostContainer";
 
 //this will display collage pictures of MooMoo's and navbar 
 function Home() {
@@ -12,8 +12,8 @@ function Home() {
     // const color = heartOn ? "red" : "white";
     // style={{background: color}} 
 
-    // console.log("empty", emptyHeart)
-    // console.log("filled", filledHeart)
+    console.log("empty", emptyHeart)
+    console.log("filled", filledHeart)
 
     useEffect(() => {
         fetch("http://localhost:3001/cows")
@@ -28,31 +28,22 @@ function Home() {
         setHeart((heartOn) => !heartOn)
     }
 
-    // function handleNewPost(newPost) {
-    //     console.log("New Post:", newPost)
-    // }
-
-    //make a separate component line 34 down
-    //change id to className 
 
     return (
         <div>
             <header id="title">MooGram!</header>
+
             {cow.map((cows) => (
-                    <div className="cowContainer" key={cows.id}>
-                        <h3 className="username"><ion-icon name="person"></ion-icon> {cows.username}</h3>
-                        <p>{cows.location}</p>
-                        <img src={cows.picture} alt="cow" className="mooPic" />
-                        <div>
-                            <button onClick={heartButton}>{heartOn ? filledHeart : emptyHeart}</button><ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-                        </div>
-                        <div className="caption">{cows.username}</div><div>{cows.caption}</div>
-                        <p>{cows.date}</p>
-                    </div>
+                <PostContainer 
+                    cows={cows} 
+                    heartButton={heartButton} 
+                    emptyHeart={emptyHeart} 
+                    filledHeart={filledHeart} 
+                    heartOn={heartOn}
+                    />
                 )
             )}
         </div>
-
     );
 }
 

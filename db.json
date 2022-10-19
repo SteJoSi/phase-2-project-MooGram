@@ -26,34 +26,11 @@
     },
     {
       "username": "mooMoo12",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvmfjg9mxTPOypfxtNaxXSQGHPWkodhvXv_g&usqp=CAU",
-      "location": "Seattle, WA",
-      "date": "12/27/2022",
-      "caption": "Test Caption",
-      "id": 4
-    },
-    {
-      "username": "mooMoo12",
-      "location": "Seattle, WA",
-      "date": "12/27/2022",
-      "caption": "Submit",
-      "id": 5
-    },
-    {
-      "username": "Stephanie",
-      "image": "https://i.pinimg.com/736x/b3/cd/c6/b3cdc6bb960107e2e65292e3f0197197.jpg",
-      "location": "Seattle, WA",
-      "date": "12/27/2022",
-      "caption": "Test Caption",
-      "id": 6
-    },
-    {
-      "username": "mooMoo12",
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvmfjg9mxTPOypfxtNaxXSQGHPWkodhvXv_g&usqp=CAU",
       "location": "Seattle, WA",
       "date": "12/27/2022",
       "caption": "Test Caption",
-      "id": 7
+      "id": 4
     }
   ]
 }
