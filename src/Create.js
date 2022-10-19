@@ -31,8 +31,6 @@ function Create() {
             .then((r) => r.json())
             .then((newPost) => {
                 console.log('post', newPost)
-                // setNewPost(newPost)
-                
                 history.push("/");
 
             })

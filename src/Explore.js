@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import {picture, date} from "./exploreData.json";
 
 //(explore)this will be display the picture the user clicked on with date and location
 function Explore() {
@@ -30,6 +29,7 @@ function Explore() {
     return (
         <div>
             <h1 className="exploreTitle">Cows!</h1>
+            <div>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvmfjg9mxTPOypfxtNaxXSQGHPWkodhvXv_g&usqp=CAU" alt="cow" className="explorePics" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} />
 
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLpVlI8xlGlwarmMx455mlfRHGIah4DKhB1g&usqp=CAU" alt="cow" className="explorePics" />
@@ -43,6 +43,7 @@ function Explore() {
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqwvIicHMXX4vnq832JcjB5_aIduzRLv-og&usqp=CAU" alt="cow" className="explorePics" />
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2BD-WadFCBXFRFZjBwHO4vstIK14CbIAJoQ&usqp=CAU" alt="cow" className="explorePics" />
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5LJgmFpmUhSxc557EdGjxIhpe_860i504LQ&usqp=CAU" alt="cow" className="explorePics" />
+            </div>
         </div>
     )
 }
