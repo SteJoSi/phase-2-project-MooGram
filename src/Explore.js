@@ -26,11 +26,15 @@ function Explore() {
         setIsHovering(false)
     }
 
+    function crossClass() {
+        return `explorePics ${true ? "hidden" : ""}`
+    }
+
     return (
         <div>
             <h1 className="exploreTitle">Cows!</h1>
             <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvmfjg9mxTPOypfxtNaxXSQGHPWkodhvXv_g&usqp=CAU" alt="cow" className="explorePics" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvmfjg9mxTPOypfxtNaxXSQGHPWkodhvXv_g&usqp=CAU" alt="cow" className={crossClass()} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} />
 
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLpVlI8xlGlwarmMx455mlfRHGIah4DKhB1g&usqp=CAU" alt="cow" className="explorePics" />
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmehSYxzdO4LtyyDXRFX688O2wJX8OA7-_4g&usqp=CAU" alt="cow" className="explorePics" />
