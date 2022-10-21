@@ -9,7 +9,7 @@ function Home() {
         fetch("http://localhost:3001/cows")
             .then(resp => resp.json())
             .then((data) => {
-                console.log("json", data);
+                // console.log("json", data);
                 setCowData(data)
             });
     }, []);

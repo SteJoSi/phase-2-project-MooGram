@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function HeartButton({crossClass}) {
+function HeartButton({ crossClass }) {
     const [heartClick, setHeartClick] = useState(false)
 
     function heartButton() {
@@ -10,7 +10,6 @@ function HeartButton({crossClass}) {
     const heartStyle = {
         "color": "pink",
         "fontSize": "30px",
-        // "display": "inline-block"
     }
 
     const emptyHeart = <ion-icon name="heart-outline"></ion-icon>
@@ -18,7 +17,12 @@ function HeartButton({crossClass}) {
 
     return (
         <div className="heartBtn">
-            <button className={crossClass} style={heartStyle} onClick={heartButton}>{heartClick ? filledHeart : emptyHeart}<ion-icon name="chatbubble-ellipses-outline"></ion-icon></button>
+            <button
+                className={crossClass}
+                style={heartStyle}
+                onClick={heartButton}>
+                {heartClick ? filledHeart : emptyHeart}<ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+            </button>
         </div>
     )
 }

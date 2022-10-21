@@ -9,18 +9,18 @@ function Explore() {
         fetch("http://localhost:3001/images")
             .then(resp => resp.json())
             .then((data) => {
-                console.log("explore", data);
+                // console.log("explore", data);
                 setImageData(data);
             });
     }, []);
 
     function handleMouseEnter(e) {
-        console.log("true", e.target)
+        // console.log("true", e.target)
         setIsHovering(true)
     }
 
     function handleMouseLeave(e) {
-        console.log("false", e.target)
+        // console.log("false", e.target)
         setIsHovering(false)
     }
 
@@ -34,10 +34,10 @@ function Explore() {
             <div>
                 {images.map((image) => {
                     return (
-                        <div key={image.id} className="explorePics" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
+                        <div key={image.id} className="explorePics" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                             <img src={image.picture} alt="cow" />
                             <p className={crossClass()}>{image.date}</p>
-                            <HeartButton crossClass={crossClass()}/>
+                            <HeartButton crossClass={crossClass()} />
                         </div>
                     )
                 })}

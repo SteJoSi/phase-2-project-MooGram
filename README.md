@@ -1,7 +1,7 @@
 # MooGram
 
 ## Description 
-MooGram was inspired by Instagram. I essectially wanted to create a platform just to upload cute cow pictures because I have a slight obsession with cows. Any time I see a cow, I yell "Moo Moo's!" I can look at cow pictures for so long and that's how MooGram came to be. So, all my other cow-lovers can enjoy adorable pictures of cows. 
+MooGram was inspired by Instagram. I essentially wanted to create a platform just to upload cute cow pictures because I have a slight obsession with cows. Any time I see a cow, I yell "Moo Moo's!" I can look at cow pictures for so long and that's how MooGram came to be. So, all my other cow-lovers can enjoy adorable pictures of cows. 
 
 ## Installation
 1. Fork and Clone the repository using the SSH key
