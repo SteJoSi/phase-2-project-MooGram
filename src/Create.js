@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-//(create) form with photo upload, caption, date
 function Create() {
     const [username, setUsername] = useState("")
     const [imageUrl, setImage] = useState("")
@@ -20,7 +19,6 @@ function Create() {
             date: date,
             caption: caption
         }
-        //fetch POST
         fetch("http://localhost:3001/cows", {
             method: "POST",
             headers: {
@@ -36,8 +34,6 @@ function Create() {
             })
         console.log('form', formData)
     }
-
-    //custom hooks form inputs
 
     return (
         <div>
