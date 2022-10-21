@@ -4,8 +4,6 @@ import Header from "./Header";
 
 function Home() {
     const [cow, setCowData] = useState([]);
-    const [heartOn, setHeart] = useState(false)
-
 
     useEffect(() => {
         fetch("http://localhost:3001/cows")
@@ -16,24 +14,14 @@ function Home() {
             });
     }, []);
 
-    function heartButton() {
-        setHeart((heartOn) => !heartOn)
-    }
-
-    const emptyHeart = <ion-icon name="heart-outline"></ion-icon>
-    const filledHeart = <ion-icon name="heart"></ion-icon>
-
     return (
         <div>
             <Header />
             <div className="cowDiv">
             {cow.map((cows) => (
                 <PostContainer
+                    key={cows.id}
                     cows={cows}
-                    heartButton={heartButton}
-                    emptyHeart={emptyHeart}
-                    filledHeart={filledHeart}
-                    heartOn={heartOn}
                 />
             )
             )}

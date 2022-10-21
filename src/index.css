@@ -1,17 +1,3 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
-
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
 #title {
   font-family: 'Lobster Two', cursive;
   font-size: 150px;
@@ -27,13 +13,10 @@
 }
 
 nav {
-  /* background-color: lightgray; */
   background-color: lavenderblush;
   display: inline-block;
   width: 100%;
   text-align: right;
-  /* top: 0;
-  transition: top 0.3s; */
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
 }
@@ -43,7 +26,6 @@ nav {
   padding: 0px;
   margin: 20px;
   font-family: 'Oswald', sans-serif;
-  ;
   font-size: 20px;
 }
 
@@ -91,18 +73,17 @@ input[type=caption] {
   font-size: 100px;
 }
 
-#footer {
+/* #footer {
   background-color: lightgray;
   display: inline-block;
   width: 100%;
   text-align: left;
   /* top: 0;
   transition: top 0.3s; */
-  font-family: 'Oswald', sans-serif;
+  /* font-family: 'Oswald', sans-serif;
   font-size: 20px;
-}
-/* margin-auto based on parent element
-flex box */
+} */ 
+
 .cowContainer {
   padding: 10px 10px 0px;
   width: 700px;
@@ -153,34 +134,41 @@ flex box */
 
 .explorePics {
   padding: 5px;
-  width: 240px;
-  height: 500px;
+  /* width: 240px; */
   display: inline-grid;
   margin: 16px 32px;
-  background-color: black;
-  box-shadow: 3px 4px gray;
-  /* border: saddlebrown solid 2px; */
+  background-color: white;
+  box-shadow: 3px 4px pink;
+  border: black solid 2px;
   border-radius: 8px;
   justify-self: center;
-  height: 192px;
   width: auto;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-around;
-  align-content: stretch;
-  flex-direction: column; */
+  color: lightpink;
 }
 
-ion-icon {
-  font-size: 25px;
-  color: pink;
+.exploreDate {
+  display: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
 }
+
+.hidden {
+  display: inline-block;
+  /* float: center; */
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+}
+
+
+/* ion-icon {
+  font-size: 30px;
+  color: pink;
+} */
 
 
 .caption {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
-  
 }
 
 h3{
