@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Route, Switch } from "react-router-dom";
 
 import NavBar from "./NavBar";
@@ -7,6 +7,21 @@ import Explore from "./Explore";
 import Create from "./Create";
 
 function App() {
+  const [cows, setCowsData] = useState([]);
+
+  useEffect(() => {
+      fetch("http://localhost:3001/cows")
+          .then(resp => resp.json())
+          .then((data) => {
+              // console.log("json", data);
+              setCowsData(data)
+          });
+  }, []);
+
+  function addCow(newCow) {
+    setCowsData([newCow, ...cows])
+  }
+
   return (
     <div>
       <NavBar />
@@ -17,11 +32,11 @@ function App() {
           </Route>
 
           <Route path="/create">
-            <Create />
+            <Create addCow={addCow}/>
           </Route>
 
           <Route exact path="/">
-            <Home />
+            <Home cows={cows} />
           </Route>
 
         </Switch>

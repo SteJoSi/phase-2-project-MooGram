@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-function Create() {
+function Create({ addCow }) {
     const [username, setUsername] = useState("")
     const [imageUrl, setImage] = useState("")
     const [location, setLocation] = useState("")
@@ -27,8 +27,9 @@ function Create() {
             body: JSON.stringify(formData),
         })
             .then((r) => r.json())
-            .then((newPost) => {
-                console.log('post', newPost)
+            .then((newCow) => {
+                // console.log('post', newCow)
+                addCow(newCow)
                 history.push("/");
 
             })
