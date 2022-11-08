@@ -13,7 +13,6 @@ function App() {
       fetch("http://localhost:3001/cows")
           .then(resp => resp.json())
           .then((data) => {
-              // console.log("json", data);
               setCowsData(data)
           });
   }, []);

@@ -28,12 +28,10 @@ function Create({ addCow }) {
         })
             .then((r) => r.json())
             .then((newCow) => {
-                // console.log('post', newCow)
                 addCow(newCow)
                 history.push("/");
 
             })
-        console.log('form', formData)
     }
 
     return (
